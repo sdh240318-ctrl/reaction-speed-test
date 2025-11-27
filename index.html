@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>반응 속도 테스트</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <main class="wrap">
+    <header>
+      <h1>반응 속도 테스트</h1>
+    </header>
+
+    <section class="card">
+      <div id="play" class="play-area" tabindex="0">
+        <div id="playText">시작 버튼을 누르거나 화면을 클릭하세요</div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="primary">시작</button>
+        <button id="resetBtn">초기화</button>
+        <div class="muted">현재 상태: <span id="status">대기</span></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="muted">최근 반응</div>
+          <div id="last" class="large">— ms</div>
+        </div>
+        <div class="stat">
+          <div class="muted">평균</div>
+          <div id="avg" class="large">— ms</div>
+        </div>
+        <div class="stat">
+          <div class="muted">최고 (최저 시간)</div>
+          <div id="best" class="large">— ms</div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="muted">기록 (최근 10개)</div>
+        <div id="historyList" class="history-list"></div>
+      </div>
+
+      <footer>
+        팁: 빨간 화면에서 초록으로 바뀌면 바로 클릭하세요. 성급하게 클릭하면 "성급한 클릭!" 경고가 뜹니다.
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
